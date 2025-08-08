@@ -8,7 +8,7 @@ import Skills from './components/Skills'
 function App() {
 
   return (
-    <main id='body'>
+    <main id='body' className='font-sans'>
       <Navbar />
       <Hero />
       <Skills />

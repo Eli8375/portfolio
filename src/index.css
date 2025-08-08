@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 .text-primary-color {
@@ -10,4 +11,10 @@
 
 .header-primary-size {
     @apply text-6xl;
+}
+
+@theme {
+    --font-roboto: "Roboto", sans-serif;
+    --font-oswald: "Oswald", sans-serif;
+    --font-sans: "Oswald", sans-serif;
 }

@@ -17,7 +17,7 @@ export default function Footer() {
                         <a href="https://www.linkedin.com/in/aleksander-a-ba244730b/" className='hover:text-gray-400'><FaLinkedin /></a>
                     </div>
                 </div>
-                <a id='download-resume' href="/resume.pdf" download className='border-2 p-2 rounded-2xl hover:text-blue-600 hover:bg-white'>DOWNLOAD RESUME</a>
+                <a id='download-resume' href="resume.pdf" download="resume.pdf" className='border-2 p-2 rounded-2xl hover:text-blue-600 hover:bg-white'>DOWNLOAD RESUME</a>
             </div>
         </footer>
     )
