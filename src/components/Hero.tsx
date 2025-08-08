@@ -2,7 +2,7 @@ import { ChevronDownIcon } from "@heroicons/react/16/solid"
 
 export default function Hero() {
     return(
-        <section id="hero-section" className="h-260 flex flex-col justify-around px-4">
+        <section id="hero-section" className="h-200 flex flex-col justify-around px-4">
             <div id="hero-heading-container">
                 <div id="hero-heading-description" className="flex flex-col">
                     <h1 id="hero-heading" className="font-oswald text-4xl sm:text-5xl md:text-6xl font-extrabold text-secondary-color mb-4">

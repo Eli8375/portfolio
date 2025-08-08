@@ -4,7 +4,7 @@ export default function Footer() {
     return(
         <footer id="footer-container" className="h-100 bg-blue-600 text-white py-6 flex justify-center">
             <div id="footer-content" className="px-4 flex flex-col justify-between text-sm items-center m-5">
-                <h1 id='lets-connect' className='header-primary-size mb-10'>LET'S CONNECT!</h1>
+                <h1 id='lets-connect' className='header-primary-size mb-10 text-shadow-lg'>LET'S CONNECT!</h1>
                 <div id='email'>
                     <a href="mailto:alekajobs@gmail.com" className='hover:text-gray-400 underline text-lg'>alekajobs@gmail.com</a>
                 </div>
