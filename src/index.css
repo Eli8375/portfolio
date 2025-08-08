@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.text-primary-color {
+    @apply text-white;
+}
+
+.text-secondary-color {
+    @apply text-blue-600;
+}
+
+.header-primary-size {
+    @apply text-6xl;
+}
