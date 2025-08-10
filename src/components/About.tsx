@@ -3,9 +3,9 @@ import maui from "../assets/images/maui.jpg"
 export default function About() {
     return(
         <div id="about-container" className="h-auto bg-white">
-            <div id="about-content" className="flex flex-row gap-15 py-15 mx-50">
-                <div id="images-container">
-                    <img src={maui} alt="maui" className="w-auto h-auto border-white border-6"/>
+            <div id="about-content" className="flex gap-15 py-25 mx-30 flex-wrap lg:flex-nowrap">
+                <div id="images-container" className="shrink-0 basis-[320px] md:basis-1/2">
+                    <img src={maui} alt="maui" className="border-white border-6 w-full h-auto object-cover max-h-140"/>
                 </div>
                 <div id="writing-container">
                     <div id="heading-container" className="text-secondary-color flex flex-col gap-4 mb-6">
@@ -16,7 +16,7 @@ export default function About() {
                             grow and collaborate. Always eager to push myself, I'm excited to test new boundaries and
                             use my skills for innovative companies and projects.
                         </p>
-                        <div id="exp-edu-container" className="text-2xl flex mt-4">
+                        <div id="exp-edu-container" className="text-2xl flex mt-4 flex-wrap gap-y-10">
                             <div id="exp-container" className="flex flex-col flex-1">
                                 <h2 id="work-header" className="text-4xl font-bold">Work Experience</h2>
                                 <div id="exp1" className="my-2">
