@@ -7,6 +7,7 @@ export default function Navbar() {
                         <a id="nav-home" href="#home" className="text-gray-700 hover:text-blue-600 transition">Home</a>
                         <a id="nav-about" href="#about" className="text-gray-700 hover:text-blue-600 transition">About</a>
                         <a id="nav-portfolio" href="#portfolio" className="text-gray-700 hover:text-blue-600 transition">Portfolio</a>
+                        <a id="nav-portfolio" href="#footer" className="text-gray-700 hover:text-blue-600 transition">Contact</a>
                     </div>
                 </div>
             </div>

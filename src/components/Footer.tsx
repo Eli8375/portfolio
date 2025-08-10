@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 export default function Footer() {
     return(
-        <footer id="footer-container" className="h-100 bg-blue-600 text-white py-6 flex justify-center">
+        <footer id="footer" className="h-100 bg-blue-600 text-white py-6 flex justify-center">
             <div id="footer-content" className="px-4 flex flex-col justify-between text-sm items-center m-5">
                 <h1 id='lets-connect' className='header-primary-size mb-10 text-shadow-lg'>LET'S CONNECT!</h1>
                 <div id='email'>

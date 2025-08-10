@@ -18,3 +18,23 @@
     --font-oswald: "Oswald", sans-serif;
     --font-sans: "Oswald", sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.aurora {
+  filter: blur(40px) saturate(120%);
+  background:
+    radial-gradient(40% 60% at 20% 20%, rgba(59,130,246,.35) 0%, transparent 55%),
+    radial-gradient(35% 55% at 80% 30%, rgba(99,102,241,.35) 0%, transparent 60%),
+    radial-gradient(45% 70% at 30% 80%, rgba(16,185,129,.30) 0%, transparent 60%),
+    radial-gradient(35% 50% at 80% 80%, rgba(236,72,153,.25) 0%, transparent 65%);
+  animation: auroraMove 14s ease-in-out infinite alternate;
+}
+
+@keyframes auroraMove {
+  0%   { transform: translate3d(-2%, -1%, 0) scale(1.05); }
+  50%  { transform: translate3d(2%, 1%, 0)  scale(1.02); }
+  100% { transform: translate3d(-1%, 2%, 0) scale(1.06); }
+}

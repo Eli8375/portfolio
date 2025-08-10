@@ -46,12 +46,12 @@ export default function Portfolio() {
     ];
 
     return(
-        <section id="project-timeline" className="bg-gray-300 h-auto">
-            <div className="px-6 py-20 flex flex-col">
+        <section id="portfolio" className="bg-gray-300 h-auto">
+            <div className="px-6 py-20 flex flex-col flex-wrap">
                 <h2 className="text-5xl font-bold text-secondary-color mb-8 text-center">
                     Capstone Project
                 </h2>
-                <div id="phases-container" className="border-1-4 border-blue-600 mx-20">
+                <div id="phases-container" className="flex flex-row flex-wrap lg:flex-nowrap border-1-4 border-blue-600 mx-20">
                     {milestones.map((milestone, index) => (
                         <div key={index} className="mx-5 py-10 flex flex-col">
                             {/* <div className="absolute w-4 h-18 bg-blue-600 rounded-full -left-[10px] border-4 border-white"></div>*/}
@@ -62,7 +62,7 @@ export default function Portfolio() {
                                 <div className="flex gap-20 justify-center pt-20 flex-wrap">
                                     {milestone.images.map((img, imageIndex) => (
                                         <figure key={imageIndex} className="border-2">
-                                            <img src={img.src} className="w-auto h-auto max-h-140"/>
+                                            <img src={img.src} className="max-w-70 w-auto h-auto max-h-140"/>
                                             {img.caption && (
                                                 <figcaption className="text-sm text-gray-400">{img.caption}</figcaption>
                                             )}
