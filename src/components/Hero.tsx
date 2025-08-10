@@ -14,7 +14,7 @@ export default function Hero() {
                 </div>
 
             </div>
-            <div id="explore-experience" className="flex flex-col items-center">
+            <div id="explore-experience" className="flex flex-col items-center text-4x1 sm:text-5xl md:text-6xl">
                 <p id="explore-experience-text" className="flex flex-col items-center text-lg text-secondary-color border-2 border-blue-600 rounded-4xl p-4">
                     Explore My Experience
                 </p> 

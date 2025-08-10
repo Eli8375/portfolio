@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import About from './components/About'
 import Skills from './components/Skills'
+import Portfolio from './components/Portfolio'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Skills />
       <About />
+      <Portfolio />
       <Footer />
     </main> 
   )
