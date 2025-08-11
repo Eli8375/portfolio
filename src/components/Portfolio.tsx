@@ -46,23 +46,24 @@ export default function Portfolio() {
     ];
 
     return(
-        <section id="portfolio" className="bg-gray-300 h-auto">
-            <div className="px-6 py-20 flex flex-col flex-wrap">
+        <section id="portfolio" className="bg-gray-300">
+            <div className="px-6 py-20 max-w-6xl mx-auto">
                 <h2 className="text-5xl font-bold text-secondary-color mb-8 text-center">
                     Capstone Project
                 </h2>
-                <div id="phases-container" className="flex flex-row flex-wrap lg:flex-nowrap border-1-4 border-blue-600 mx-20">
+                <div id="phases-container" className="grid gap-8 border-blue-600">
                     {milestones.map((milestone, index) => (
-                        <div key={index} className="mx-5 py-10 flex flex-col">
-                            {/* <div className="absolute w-4 h-18 bg-blue-600 rounded-full -left-[10px] border-4 border-white"></div>*/}
-                            <time className="block text-5xl text-gray-500 mb-1">{milestone.phase}</time>
-                            <h3 className="text-4xl font-semibold text-secondary-color">{milestone.title}</h3>
-                            <p className="mt-2 text-gray-700 text-3xl">{milestone.description}</p>
+                        <div key={index} className="grid gap-8 lg:grid-cols-2 items-start">
+                            <div id="left-content" className="space-y-3">
+                                <time className="text-3xl lg:text-5xl text-gray-500">{milestone.phase}</time>
+                                <h3 className="text-4xl font-semibold text-secondary-color">{milestone.title}</h3>
+                                <p className="mt-2 text-gray-700 text-2xl">{milestone.description}</p>
+                            </div>
                             {milestone.images && milestone.images.length > 0 && (
-                                <div className="flex gap-20 justify-center pt-20 flex-wrap">
+                                <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                                     {milestone.images.map((img, imageIndex) => (
-                                        <figure key={imageIndex} className="border-2">
-                                            <img src={img.src} className="max-w-70 w-auto h-auto max-h-140"/>
+                                        <figure key={imageIndex} className="overflow-hidden rounded-md">
+                                            <img src={img.src} className="block w-full max-w-full h-auto"/>
                                             {img.caption && (
                                                 <figcaption className="text-sm text-gray-400">{img.caption}</figcaption>
                                             )}
@@ -73,7 +74,7 @@ export default function Portfolio() {
                         </div>
                     ))}
                 </div>
-            <a href="https://youtu.be/2GelUVe3n6M" className="text-blue-600 border-2 flex justify-center items-center rounded-3xl text-3xl p-3 hover:bg-blue-600 hover:text-white hover:border-blue-600">Check out our demo!</a>
+            <a href="https://youtu.be/2GelUVe3n6M" className="mt-12 mx-auto inline-block text-blue-600 border-2 rounded-3xl text-3xl px-6 py-3 hover:bg-blue-600 hover:text-white hover:border-blue-600">Check out our demo!</a>
             </div>
         </section> 
     )
