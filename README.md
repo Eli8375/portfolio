@@ -28,5 +28,5 @@ Builds the project (npm run build)
 Deploys dist/ to GitHub Pages
 
 ## Live Site
-https://eli8375.github.io/portfolio/
+https://aealderete.github.io/portfolio/
 
